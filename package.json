@@ -1,0 +1,19 @@
+{
+  "name": "finalexamproject",
+  "version": "1.0.0",
+  "description": "Submitted by: Ojas Jagtap (directory id: ojagtap)\r Group Members: Ananth Sankaralingam (ananths1), Esha Shah (eshah)\r App Description:Allow users to find images, songs of an author and store the results.\r YouTube Video Link: \r APIs:\r Contact Email: ojagtap@terpmail.umd.edu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.6.1"
+  }
+}

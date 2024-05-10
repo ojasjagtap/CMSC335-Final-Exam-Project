@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <form
+      id="weatherForm"
+      action="/weather"
+      method="post"
+      onsubmit="return validateForm()"
+    >
+      <input type="text" name="lat" placeholder="Latitude" required /> <br />
+      <br />
+      <input type="text" name="lon" placeholder="Longitude" required /> <br />
+      <br />
+      <input type="reset" />
+      <button type="submit">Get Weather</button>
+    </form>
+  </body>
+</html>
+
+<script>
+  function validateForm() {
+    var lat = parseFloat(document.getElementById("weatherForm")["lat"].value);
+    var lon = parseFloat(document.getElementById("weatherForm")["lon"].value);
+
+    if (isNaN(lat) || lat < -90 || lat > 90) {
+      alert("Invalid lat supplied. Must be between -90 and +90");
+      return false;
+    }
+
+    if (isNaN(lon) || lon < -180 || lon > 180) {
+      alert("Invalid lon supplied. Must be between -180 and +180");
+      return false;
+    }
+    return true;
+  }
+</script>
