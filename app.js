@@ -12,7 +12,7 @@ const database = {
   db: process.env.MONGO_DB_NAME,
   collect: process.env.MONGO_COLLECTION,
 };
-const portNumber = process.argv[2];
+const portNumber = 3000;
 const express = require("express");
 const app = express();
 
